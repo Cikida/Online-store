@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="styles7.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!--Used Ion icons for the add to cart icon-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
+    <!--Including jQuery -->
+    <script src="Humi.js" async></script>
+    <script type='text/javascript' src="HumiJQuery.js" async></script>
+    <title>SHOPPING CART</title>
+
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="Landing page.html"> Home </a>
+        <a class="navbar-brand" href="About Us.html"> About Us </a>
+        <a class="navbar-brand" href="Shipping detail.html"> Shipping</a>
+        <a class="navbar-brand" href="mailto:misscgcali@gmail.com"> Contact Support </a>
+        <a class=" cart" href="HumiCart.html">
+            <ion-icon name="basket"></ion-icon>Cart<span>(0)</span>
+        </a>
+        <!--Added add to card menu item in navigation and linked to checkout page-->
+
+    </nav>
+    <!--Create a new html page for the cart section which allows the user to see what is in their cart,each item’s price,and the total cost(remember to add VAT!)-->
+    <div id="animation" class="animation">
+        <!--Creating a container to allow us to create an animation-->
+        <div class="container-products">
+            <div class="product-header">
+                <h5 class="product-title">PRODUCT</h5>
+                <h5 class="prices">PRICE</h5>
+                <h5 class="quantity">QUANTITY</h5>
+                <h5 class="total">TOTAL</h5>
+            </div>
+            <div class="products"></div>
+
+
+            <div class="promo">
+                <form class="promocode">
+                    <input type="text" class="PromoCode" id="PC" required placeholder="Enter Promo Code">
+                    <button onclick="addPromoCode()">Enter promo Code</button>
+                </form>
+            </div>
+
+            <table class="deliveryTable">
+                <tr>
+                    <td>
+                        <div class="delivery">
+                            <select id="select_id" class="select" onchange="addDelivery()">
+                                <option value=0>-Select Delivery-</option>
+                                <option value=0 class="feature" id="default">Collect</option>
+                                <option value=200 class="feature">Deliver</option>
+                            </select>
+                        </div>
+                    </td>
+
+                    <td>
+                        <h4 class="deliveryTitle">Delivery Total</h4>
+                    </td>
+                    <td>
+                        <h4 class="DeliveryTotal" id="deliveryvalue"></h4>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <h4 class="gift">Is this a gift?</h4>
+            <button class="yes"> Yes </button>
+            <button class="no"> No </button>
+            <div class="giftoption">
+                <h4 class="gift">Choose your message</h4>
+                <ul id="accordion">
+                    <li>
+                        <div>Friend</div>
+                        <ul>
+                            <li><a href="#">Enjoy your gift friend</a></li>
+                            <li><a href="#">Happy birthday friend</a></li>
+                            <li><a href="#">Merry Christmas friend</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>Relative</div>
+                        <ul>
+                            <li><a href="#">Enjoy your gift Love</a></li>
+                            <li><a href="#">Enjoy your gift Mom</a></li>
+                            <li><a href="#">Enjoy your gift Dad</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+            <br>
+            <div class="Confirm">
+                <button class="checkout" id="btnChangeBg" onclick="confirmOrder()">Checkout</button>
+            </div>
+        </div>
+    </div>
+    <div id="demo"></div>
+
+
+</body>
+
+</html>

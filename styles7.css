@@ -1,0 +1,432 @@
+body {
+    width: 100%;
+    margin: auto;
+}
+
+.navbar-brand {
+    text-decoration: none;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: smaller;
+}
+
+.navbar-brand:hover {
+    color: goldenrod;
+}
+
+::placeholder {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.buttons {
+    color: white;
+    background-color: #0d2821;
+    border: 2px solid goldenrod;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.moreButton {
+    color: white;
+    background-color: #0d2821;
+    border: 2px solid #0d2821;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 3px;
+    width: 110px;
+    position: relative;
+    bottom: 100px;
+    left: 600px;
+
+}
+
+.moreButton:hover {
+    color: goldenrod;
+
+}
+
+img {
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.headimage {
+    width: auto;
+    height: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid #0d2821;
+
+}
+
+.ItemPic {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: transform .2s;
+    /* Animation */
+
+}
+
+.ItemPic:hover {
+    transform: scale(1.05)
+}
+
+.container-fluid {
+    width: 100%;
+    display: grid;
+
+}
+
+.container-fluid:hover {
+    opacity: 0.5;
+
+}
+
+form {
+    background-color: #0d2821;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+
+
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    font-family: Georgia;
+}
+
+p {
+    text-align: center;
+    font-family: Georgia;
+}
+
+.aboutsection {
+    width: 80%;
+    margin: auto;
+}
+
+ul {
+    list-style-type: square;
+    padding: 20px;
+}
+
+
+th {
+    text-align: center;
+    font-family: Georgia;
+
+}
+
+.price {
+    color: goldenrod;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+thead {
+    color: white;
+    background-color: #0d2821;
+    border: 2px solid #0d2821;
+    text-align: center;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+    color: gray;
+
+}
+
+table {
+    border: 2px solid #0d2821;
+}
+
+.Decription {
+    filter: grayscale(100%);
+}
+
+.Background {
+    background: white;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    from {
+        background-color: white;
+    }
+
+    to {
+        background-color: #e1d0bd;
+    }
+}
+
+
+.cart{
+    text-decoration: none;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.cart:hover {
+    color: goldenrod;
+}
+.add-cart{
+    color: white;
+    background-color: #0d2821;
+    border: 2px solid #0d2821;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 3px;
+    width: 110px;
+    
+ }
+ .add-cart:hover{
+    color: goldenrod;
+    opacity: 0.5;
+ }
+
+ 
+/* ----------------- STYLING FOR CART PAGE --------------- */
+
+.container-products {
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+
+}
+.container-products {
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.container-products ion-icon {
+    font-size: 25px;
+    color: goldenrod;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 2px solid #0d2821;
+    margin: 0 auto;
+}
+
+.product-title {
+    width: 45%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.prices {
+    width: 15%;
+    border-bottom: 2px solid #0d2821;
+    display: flex;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.quantity {
+    width: 30%;
+    border-bottom: 2px solid #0d2821;
+    display: flex;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.total {
+    width: 10%;
+    border-bottom: 2px solid #0d2821;
+    display: flex;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.product {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #0d2821;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+    
+
+}
+
+.basketTotalTitle {
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.VATTitle {
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.basketTotal {
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.VAT{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.deliverycost{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.promo {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+    background-color: white;
+    width: 100%;
+    text-align: left;
+}
+.promocode{
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    background-color: white;
+    width: 100%;
+    border-bottom: 2px solid #0d2821;
+}
+.label{
+    width: 30%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+.delivery{
+    justify-content: flex-end;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+    text-align: left;
+   
+}
+.select{
+    width: 100%;
+    float: left;
+    text-align: left;
+    
+}
+.checkout{
+    color: white;
+    background-color: #0d2821;
+    border: 2px solid #0d2821;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 3px;
+    width: 110px;
+    bottom: 100px;
+    left: 600px;
+}
+.deliveryTable{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+} 
+.DeliveryTotal {
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float:right;
+ 
+}
+.deliveryTitle {
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float:left;
+}
+#accordion {
+	list-style: none;
+	padding: 0 0 0 0;
+	width: 170px;
+}
+#accordion div {
+	display: block;
+	background-color: #0d2821;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+	margin: 1px;
+	cursor: pointer;
+	padding: 5 5 5 7px;
+	list-style: circle;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+#accordion ul {
+	list-style: none;
+	padding: 0 0 0 0;
+
+}
+#accordion ul{
+	display: none;
+}
+#accordion ul li {
+	font-weight: normal;
+	cursor: auto;
+	background-color: #fff;
+	padding: 0 0 0 7px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#accordion a {
+	text-decoration: black;
+    color: #0d2821;
+}
+.gift{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
